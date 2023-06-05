@@ -1,0 +1,8 @@
+{
+    "Name": "PS5",
+    "Description": "Video Game Console created by Sony",
+    "Price": 29990,
+    "Stocks": 50,
+    "Is Active?": true,
+    "SKU": "A2469420"
+}

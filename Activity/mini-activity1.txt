@@ -1,0 +1,32 @@
+let orderProducts = {
+	"Order ID": "A24",
+	"Product ID": 7079,
+	"Quantity": 1,
+	"Price": 500,
+	"Sub Total": 50
+}
+
+let products = {
+	"Name": "PS5",
+	"Description": "Video Game Console created by Sony",
+	"Price": 29990,
+	"Stocks": 50,
+	"Is Active?": Yes,
+	"SKU": "A2469420"
+}
+
+let users = {
+	"First Name": "Avin",
+	"Last Name": "Robles",
+	"Email": "avinrobles@gmail.com",
+	"Password": "password12345",
+	"Is Admin?": Yes,
+	"Mobile Number": "09174942976"
+}
+
+let orders = {
+	"User ID": "09272002",
+	"Transaction Date": "4/20/25",
+	"Status": Active,
+	"Total": 35000
+}

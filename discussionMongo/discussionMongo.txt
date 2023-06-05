@@ -1,0 +1,186 @@
+Database
+- Collection of data that are arranged and organized in a meaningful way
+
+Data vs Information
+
+let theBeatles = ['Richard','Gringo','John', 'Paul']
+
+let childBirthYear = [1990, 1986, 2023]
+
+let shakespeareQuote = 'To be or not to be, that is the question.'
+
+{
+	name: 'Michael Jordan',
+	championship: [1990,1996,1990,2002],
+	draftYear: 1984,
+	draftPosition: 3
+}
+
+DATABASE MANAGEMENT SYSTEM
+- Allows us to manage/manipulate databases. We could perform basic CRUD operations on our databases.
+
+What is CRUD?
+CRUD - Create, Read, Update, and Delete
+	
+Relational Database
+- Allow to store data or information and arrange it in a meaningful table
+- Data is arranged and store in tables of rows and columns
+
+id	name	price
+1	PS5	27500
+2	PS4	16000
+
+SQL
+- Structured query language. It is typically used to programmatically manage/manipulate a relational database.
+
+ERD
+Mini-Activiti
+
+In the m10 folder, create an activity folder.
+Go to diagrams.net and link your professional gmail account.
+Using the given set of entities and attributes, create an ERD that will show the relationships between the collections:
+
+Order Item
+Order ID
+Product ID
+Quantity
+Price
+Sub Total
+
+Products
+Name
+Description
+Price
+Stocks
+Is Active?
+SKU
+
+Users
+First Name
+Last Name
+Email
+Password
+Is Admin?
+Mobile Number
+
+
+Orders
+User Id
+Transaction Date
+Status
+Total
+
+Screenshot the diagram and paste it in our discussion mini-activity
+
+
+
+
+Create a mock data for each of the following collection using JSON syntax.
+
+
+Collection: "Order Item"
+[
+	{
+		"Order ID": "A24",
+		"Product ID": 7079,
+		"Quantity": 1,
+		"Price": 500,
+		"Sub Total": 50
+	}
+]
+
+Collection: "Products"
+[
+	{
+		"Name": "PS5",
+		"Description": "Video Game Console created by Sony",
+		"Price": 29990,
+		"Stocks": 50,
+		"Is Active?": true,
+		"SKU": "A2469420"
+	}
+]
+
+Collection: "Users"
+[
+	{
+		"First Name": "Avin",
+		"Last Name": "Robles",
+		"Email": "avinrobles@gmail.com",
+		"Password": "password12345",
+		"Is Admin?": false,
+		"Mobile Number": 09999866420
+	}
+]
+
+Collection: "Orders"
+[
+	{
+		"User ID": "09272002",
+		"Transaction Date": "4/20/25",
+		"Status": Active,
+		"Total": 35000
+	}
+]
+
+=====================
+Data Model
+-  Describes how data is organized or group in a databse
+
+Data Modeling Simulation
+- Login
+	- users
+		- admin
+		- users
+			- guest users
+			- users
+
+Create Data Model
+	- Users
+		- admin
+		- customer
+			-- first name
+			-- last name
+			-- mobile number
+			-- email
+			-- password
+			-- is Admin?
+			-- enrollments
+		- courses
+			-- name
+			-- description
+			-- price
+			-- is Active
+			-- enrollees
+
+Relationships between data models
+	- one-to-one = one can only have one (one person has one ID)
+	- one-to-many = one can have one or more (emails)
+	- many-to-one = multiple people can only have one (Authors doing one Research)
+
+Translating data models into an ERD
+	ERD
+		- Entity-Relationship Diagram
+			- Explains the relationship between entities and their attributes to 				other entities.
+
+====================
+SQL
+	- structure query language
+	- it is a language used typically in relational DBMS to store, retrieve and modify data
+
+SELECT id, first_name, last_name FROM students WHERE section = 1;
+
+NoSQL
+	- Not Only SQL
+
+db.students.find({section = 1}, {id: 1, firstName: 1, lastName: 1})
+
+	- was conceptualize when capturing complex, unstructured data 
+		- MongoDB
+MongoDB
+	- open-source database and the leading NoSQL database, it's language is highly expressive and generally friendly to those familiar with JSON structure
+		- "Mongo" in MongoDB is a part of word "humongous" which means huge or enormous
+
+		- tables ==> collections
+		- rows ==> documents
+		- columns ==> field
